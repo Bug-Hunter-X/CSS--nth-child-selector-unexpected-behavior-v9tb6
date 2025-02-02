@@ -1,0 +1,9 @@
+The following CSS code snippet demonstrates an uncommon error related to the `:nth-child` pseudo-class.  The goal is to style every other list item starting from the second item. However, the code contains a common mistake that causes unexpected behavior. 
+
+```css
+li:nth-child(2n) {
+  background-color: yellow;
+}
+```
+
+This CSS only styles even-numbered children. To style every other element *starting from the second*, you must use `2n+1`.
