@@ -1,0 +1,9 @@
+The correct CSS to style every other list item, starting from the second, is:
+
+```css
+li:nth-child(2n+1) {
+  background-color: yellow;
+}
+```
+
+This uses the formula `2n+1` which correctly targets the second, fourth, sixth etc. elements.
